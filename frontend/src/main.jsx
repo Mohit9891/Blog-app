@@ -8,17 +8,19 @@ import Footer from "./landingpage/Footer";
 import Contact from "./landingpage/contact/Contact";
 import SignUp from "./landingpage/signup/SignUp";
 import About from "./landingpage/about/About";
+import Background from "./landingpage/Background";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/signup" element={<SignUp />} />
-      
-    </Routes>
-    <Footer />
+    <Background>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+      <Footer />
+    </Background>
   </BrowserRouter>
 );

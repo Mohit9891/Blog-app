@@ -2,8 +2,8 @@ import React from "react";
 
 const AllPosts = () => {
   return (
-    <div className="container">
-      <div className="text-center font-bold text-5xl mb-9"> Latest Posts</div>
+    <div className="container mt-[350px]">
+      <div className="text-center text-white font-bold text-5xl mb-9"> Latest Posts</div>
       <div className="grid grid-cols-4 ml-9">
         <div class="isolate aspect-video w-80 rounded-xl bg-white shadow-lg ring-1 ring-black/5 p-3">
           <h1 className="text-xl">Namith Tanwar</h1>
